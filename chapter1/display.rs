@@ -32,8 +32,8 @@ fn main() {
     let minmax = MinMax(0, 14);
 
     println!("Compare structures:");
-    println!("Display: {}", minmax);
-    println!("Debug: {:?}", minmax);
+    println!("Display: {}", minmax); // Display: (0, 14)
+    println!("Debug: {:?}", minmax); // Debug: MinMax(0, 14)
 
     let big_range =   MinMax(-300, 300);
     let small_range = MinMax(-3, 3);
@@ -45,8 +45,8 @@ fn main() {
     let point = Point2 { x: 3.3, y: 7.2 };
 
     println!("Compare points:");
-    println!("Display: {}", point);
-    println!("Debug: {:?}", point);
+    println!("Display: {}", point); // Display: x: 3.3, y: 7.2
+    println!("Debug: {:?}", point); // Debug: Point2 { x: 3.3, y: 7.2 }
 
     // Error. Both `Debug` and `Display` were implemented but `{:b}`
     // requires `fmt::Binary` to be implemented. This will not work.
